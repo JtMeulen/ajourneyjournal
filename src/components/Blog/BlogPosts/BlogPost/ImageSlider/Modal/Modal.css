@@ -1,0 +1,23 @@
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.imageContainer {
+    z-index: 500;
+    margin: 40px auto;
+    max-width: 60%;
+}
+
+.subtext {
+    background: black;
+    margin: 0;
+    height: 30px;
+    color: white;
+    text-align: center;
+}

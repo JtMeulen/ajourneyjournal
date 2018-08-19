@@ -1,0 +1,21 @@
+.title {
+    font-family: PlaylistScript;
+    font-weight: normal;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.location {
+    font-family: PlaylistCaps;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.breakline {
+    width: 100%;
+}

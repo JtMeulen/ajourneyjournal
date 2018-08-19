@@ -1,0 +1,11 @@
+.postcards {
+    padding: 140px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+}
+
+.column {
+    width: 25%;
+}

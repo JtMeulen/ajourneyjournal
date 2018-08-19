@@ -1,0 +1,37 @@
+.titleBar {
+    margin-top: 139px;
+    position: fixed;
+    width: 100%;
+    background: #d0ced2;
+    background-size: cover; 
+    background-position: center;
+}
+
+.overlay {
+    padding: 15px 0;
+    width: inherit;
+    height: inherit;
+    color: white;
+    text-align: center;
+} 
+
+.title {
+    margin: 0;
+    font-family: PlaylistScript;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 100px;
+    padding-top: 10px;
+}
+
+.subtitle {
+    font-family: PlaylistCaps;
+    margin: 0;
+    font-size: 25px;
+    transition: 1s all;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;    
+}

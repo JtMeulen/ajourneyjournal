@@ -1,0 +1,36 @@
+.postcard {
+    /* width: 20%; */
+    margin: 26px 13px;
+    cursor: pointer;
+    background-size: cover; 
+    background-position: center;
+}
+
+.overlay {
+    width: inherit;
+    height: inherit;
+    color: white;
+    opacity: 0;
+    transition: 0.2s linear;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.postcard:hover > .overlay {
+    opacity: 1;
+}
+
+.title {
+    margin: 0;
+    font-family: PlaylistScript;
+    font-size: 60px;
+}
+
+.year {
+    margin: 0;
+    font-family: PlaylistCaps;
+    font-weight: normal;
+    font-size: 40px;
+}

@@ -1,0 +1,9 @@
+.image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: grey;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 200px 100px;
+}
