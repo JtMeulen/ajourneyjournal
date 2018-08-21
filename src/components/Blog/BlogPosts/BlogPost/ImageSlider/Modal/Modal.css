@@ -11,13 +11,49 @@
 .imageContainer {
     z-index: 500;
     margin: 40px auto;
-    max-width: 60%;
+    background:white;
+    border: 30px solid white;
+    max-width: 1100px;
+}
+
+.image {
+    width: 100%;
+    /* max-height: 80vh; */
 }
 
 .subtext {
-    background: black;
+    background:white;
+    padding-top: 5px;
     margin: 0;
+    width: 100%;
     height: 30px;
-    color: white;
     text-align: center;
+}
+
+.tape {
+    width: 22%;
+    height: 5%;
+    position: absolute;
+    background: rgba(142,112,87,0.7);
+    transform: translate(150%, -47px) rotate(11deg);
+}
+
+@media (max-width:1400px) {
+    .imageContainer {
+        max-width: 85%;
+    }
+}
+
+@media (max-width:450px) {
+    .imageContainer {
+        margin: 100px auto;
+        max-width: 80%;
+    }
+    .tape {
+        width: 22%;
+        height: 5%;
+        position: absolute;
+        background: rgba(142,112,87,0.7);
+        transform: translate(150%, -47px) rotate(11deg);
+    }
 }

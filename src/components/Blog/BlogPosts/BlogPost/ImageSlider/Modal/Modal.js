@@ -12,15 +12,16 @@ class ImageSlider extends Component {
         e.stopPropagation();
     }
 
-    render() { 
+    render() {
         return(
             <div className={styles.modalBackground} onClick={this.closeModalHandler}>
                 <div className={styles.imageContainer} >
-                    <img src={this.props.image.url} alt="" onClick={this.nextImageHandler} />
+                <div className={styles.tape}></div>
+                    <img className={styles.image} src={this.props.image.url} alt="" onClick={this.nextImageHandler} />
                     <div className={styles.subtext}>{this.props.image.text}</div>
                 </div>
-            </div>            
-        ); 
+            </div>
+        );
     }
 }
 
