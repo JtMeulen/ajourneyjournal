@@ -5,6 +5,12 @@ import styles from './PostCard.css';
 
 class PostCard extends Component {
 
+    componentWillMount(){
+        const imgArray = this.props.data.images;
+        const randImage = imgArray[Math.floor(Math.random() * imgArray.length)];
+        this.setState({image: randImage.image, color: randImage.color});
+    }
+
     onClickHandler = () => {
         this.props.history.push(`/${this.props.name}`);
     }
@@ -14,26 +20,29 @@ class PostCard extends Component {
     }
 
     render() {
+        const { data, width } = this.props;
+
         let height = '360';
-        if(this.props.data){
-            if(this.props.data.size === 'medium') {
+        if(data){
+            if(data.size === 'medium') {
                 height = "525"
-            } else if (this.props.data.size === 'large') {
+            } else if (data.size === 'large') {
                 height = "630"
             }
         }
-        console.log(this.isTouchDevice())
-        height = this.props.width >= 600 ? height * (this.props.width / 1600) : height * (this.props.width / 1600) * 2;
-        const image = this.props.data ? this.props.data.image : '';
-        const overlayColor = this.props.data ? this.props.data.color : 'grey';
+
+        height = width >= 600 ? height * (width / 1600) : height * (width / 1600) * 2;
+
+        const image = this.state.image || '';
+        const overlayColor = this.state.color || 'rgba(204, 132, 44, 0.7)';
 
         return(
             <div onClick={this.onClickHandler}  className={styles.postcard} style={{
                                                                                 "height": `${height}px`,
                                                                                 "backgroundImage": `url(${image})`}}>
                 <div className={!this.isTouchDevice() ? styles.overlay : styles.mobileOverlay} style={{"backgroundColor": `${overlayColor}`}}>
-                    <p className={styles.title}>{this.props.data && this.props.data.title}</p>
-                    <p className={styles.year}>{this.props.data && this.props.data.year}</p>
+                    <p className={styles.title}>{data && data.title}</p>
+                    <p className={styles.year}>{data && data.year}</p>
                 </div>
 
             </div>
