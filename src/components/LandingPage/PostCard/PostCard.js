@@ -8,7 +8,7 @@ class PostCard extends Component {
     componentWillMount(){
         const imgArray = this.props.data.images;
         const randImage = imgArray[Math.floor(Math.random() * imgArray.length)];
-        this.setState({image: randImage.image, color: randImage.color});
+        this.setState({image: randImage.image, color: randImage.color, size: randImage.size});
     }
 
     onClickHandler = () => {
@@ -23,10 +23,10 @@ class PostCard extends Component {
         const { data, width } = this.props;
 
         let height = '360';
-        if(data){
-            if(data.size === 'medium') {
+        if(this.state.size){
+            if(this.state.size === 'medium') {
                 height = "525"
-            } else if (data.size === 'large') {
+            } else if (this.state.size === 'large') {
                 height = "630"
             }
         }

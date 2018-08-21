@@ -3,7 +3,7 @@
     margin: 26px 13px;
     cursor: pointer;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .overlay {
@@ -37,7 +37,7 @@
 .title {
     margin: 0;
     font-family: PlaylistScript;
-    font-size: 60px;
+    font-size: 90px;
 }
 
 .year {
