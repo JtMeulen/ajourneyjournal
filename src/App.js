@@ -9,21 +9,6 @@ import {blogs} from './blogs';
 
 class App extends Component {
 
-  // state = {
-  //   blogs: {},
-  //   loading: true
-  // }
-
-  // componentDidMount() {
-  //   fetch("https://journeyjournal21.firebaseio.com/blogs.json")
-  //       .then(response => {
-  //           return response.json()
-  //       })
-  //       .then(data => {
-  //         this.setState({blogs: data, loading: false})
-  //       })
-  // }
-    
   render() {
     // retrieve all possible route names from the blog object
     const blogRoutes = [];
@@ -32,24 +17,24 @@ class App extends Component {
     };
     // map all routes
     const allRoutes = blogRoutes.map((blog, idx) => {
-      return <Route path={`/${blog}`} exact key={idx} component={Blog} /> 
+      return <Route path={`/${blog}`} exact key={idx} component={Blog} />
     });
-    
+
     let routes = (
       <Switch>
         <Route path="/" exact component={LandingPage} />
-        {allRoutes}     
+        {allRoutes}
         <Redirect to="/" />
       </Switch>
     );
 
     return (
       <div>
-        <BrowserRouter> 
+        <BrowserRouter>
           <Layout>
             {routes}
           </Layout>
-        </BrowserRouter>  
+        </BrowserRouter>
       </div>
     );
   }

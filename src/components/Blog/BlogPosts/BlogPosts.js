@@ -5,19 +5,22 @@ import styles from './BlogPosts.css';
 
 class BlogPosts extends Component {
 
-    render() { 
+    render() {
 
         const blogposts = this.props.data.days.map((post, idx) => {
             return <BlogPost key={idx} {...post} />
         });
-        
-        const paddingLeft = this.props.data.worldMap ? "400px" : "100px"
+
+        let paddingLeft = this.props.worldMap ? "400px" : "100px";
+        if(this.props.isMobile) {
+            paddingLeft = "30px";
+        }
 
         return(
             <div className={styles.blogContainer} style={{"paddingLeft": `${paddingLeft}`}}>
                 {blogposts}
-            </div>            
-        );        
+            </div>
+        );
     }
 }
 
