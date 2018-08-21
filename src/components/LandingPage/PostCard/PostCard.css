@@ -2,7 +2,7 @@
     /* width: 20%; */
     margin: 26px 13px;
     cursor: pointer;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
@@ -16,7 +16,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-} 
+}
+
+.mobileOverlay {
+    width: inherit;
+    height: inherit;
+    color: white;
+    opacity: 1;
+    transition: 0.2s linear;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .postcard:hover > .overlay {
     opacity: 1;

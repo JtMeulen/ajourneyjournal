@@ -25,4 +25,13 @@
     .column {
       width: 100%;
     }
+    .postcards {
+        padding: 140px 0;
+    }
+}
+
+@media (max-width:450px) {
+    .postcards {
+        padding: 100px 0;
+    }
 }

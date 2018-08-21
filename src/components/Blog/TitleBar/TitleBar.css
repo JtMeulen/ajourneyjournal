@@ -3,8 +3,8 @@
     position: fixed;
     width: 100%;
     background: #d0ced2;
-    background-size: cover; 
-    background-position: center;
+    background-size: cover;
+    background-position: top;
 }
 
 .overlay {
@@ -13,7 +13,7 @@
     height: inherit;
     color: white;
     text-align: center;
-} 
+}
 
 .title {
     margin: 0;
@@ -31,7 +31,16 @@
     transition: 1s all;
 }
 
-.hidden {
-    opacity: 0;
-    display: none;    
+@media (max-width:450px) {
+    .title {
+        font-size: 50px;
+        line-height: 70px;
+        padding-top: 0;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .titleBar {
+        margin-top: 109px;
+    }
 }
