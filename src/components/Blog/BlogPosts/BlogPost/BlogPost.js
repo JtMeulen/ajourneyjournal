@@ -6,8 +6,8 @@ import styles from './BlogPost.css';
 
 class BlogPost extends Component {
 
-    render() { 
-        
+    render() {
+
         return(
             <div className={styles.blogPost}>
                 <h1 className={styles.title}>{this.props.title}</h1>
@@ -17,8 +17,8 @@ class BlogPost extends Component {
                 {this.props.images && <ImageSlider images={this.props.images} />}
 
                 <img src={breakline} alt='' className={styles.breakline}/>
-            </div>            
-        );        
+            </div>
+        );
     }
 }
 

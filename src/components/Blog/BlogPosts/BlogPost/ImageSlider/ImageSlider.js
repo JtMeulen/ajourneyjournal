@@ -6,16 +6,17 @@ import Modal from './Modal/Modal';
 import styles from './ImageSlider.css';
 
 class ImageSlider extends Component {
-    
+
     state = {
         modal: false,
         modalUrl: {}
     }
 
-    thumbNailClick = (props) => {
+    thumbNailClick = (props, idx) => {
         this.setState({
             modal: true,
-            modalUrl: props
+            modalUrl: props,
+            modalIndex: idx
         });
     }
 
@@ -26,20 +27,20 @@ class ImageSlider extends Component {
         });
     }
 
-    render() { 
+    render() {
 
         const images = this.props.images.map((image, idx) => {
-            return <Thumbnail key={idx} image={image} thumbNailClick={this.thumbNailClick}/>
+            return <Thumbnail key={idx} idx={idx} image={image} thumbNailClick={this.thumbNailClick}/>
         })
-        
+
         return(
             <div className={styles.imageSlider}>
                 {this.state.modal &&
-                    <Modal image={this.state.modalUrl} closeModalHandler={this.closeModalHandler}/>
+                    <Modal image={this.state.modalUrl} closeModalHandler={this.closeModalHandler} allImages={this.props.images} idx={this.state.modalIndex}/>
                 }
                 {images}
-            </div>            
-        );        
+            </div>
+        );
     }
 }
 

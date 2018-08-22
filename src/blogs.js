@@ -29,7 +29,7 @@ export const blogs = {
                         text: "some text here"
                     },
                     {
-                        url: "",
+                        url: "https://i.imgur.com/eSGunduh.jpg",
                         text: "some text here"
                     },
                     {
@@ -37,11 +37,11 @@ export const blogs = {
                         text: "some text here"
                     },
                     {
-                        url: "",
+                        url: "https://i.imgur.com/eSGunduh.jpg",
                         text: "some text here"
                     },
                     {
-                        url: "",
+                        url: "https://i.imgur.com/MT4lEorh.jpg",
                         text: "some text here"
                     }
                 ]
@@ -52,7 +52,7 @@ export const blogs = {
                 description: "filler text",
                 images: [
                     {
-                        url: "",
+                        url: "https://i.imgur.com/eSGunduh.jpg",
                         text: "some text here"
                     }
                 ]

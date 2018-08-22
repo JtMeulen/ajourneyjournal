@@ -5,18 +5,18 @@ import styles from './Thumbnail.css';
 class Thumbnail extends Component {
 
     onThumbnailClick = () => {
-        this.props.thumbNailClick(this.props.image);
+        this.props.thumbNailClick(this.props.image, this.props.idx);
     }
 
     render() {
-        
+
         return(
-            <div 
-                className={styles.image} 
+            <div
+                className={styles.image}
                 style={{"backgroundImage": `url(${this.props.image.url})`}}
                 onClick={this.onThumbnailClick}
-            ></div>         
-        );        
+            ></div>
+        );
     }
 }
 
