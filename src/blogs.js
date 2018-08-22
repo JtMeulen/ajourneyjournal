@@ -2,11 +2,11 @@ export const blogs = {
     srilanka: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/X6PVx0jh.jpg", color: "rgba(30, 107, 94, 0.6)"},
-                {image: "https://i.imgur.com/LXkNiUNh.jpg", color: "rgba(30, 107, 94, 0.6)"},
-                {image: "https://i.imgur.com/MT4lEorh.jpg", color: "rgba(30, 107, 94, 0.6)"}
+                {image: "https://i.imgur.com/qGvQ96Sh.jpg", color: "rgba(30, 107, 94, 0.6)"},
+                {image: "https://i.imgur.com/LJgR8OUh.jpg", color: "rgba(30, 107, 94, 0.6)"},
+                {image: "https://i.imgur.com/LXkNiUNh.jpg", color: "rgba(30, 107, 94, 0.6)"}
             ],
-            size: "medium",
+            size: "small",
             title: "Sri Lanka",
             year: "2018"
         },
@@ -14,7 +14,7 @@ export const blogs = {
             title: "Sri Lanka",
             subtitle: "a 16-day road trip through Sri Lanka in January 2018",
             images: [
-                {image: "https://i.imgur.com/3c1dNwM.jpg", color: "rgba(30, 107, 94, 0)"}
+                {image: "https://i.imgur.com/GyGlHdp.png", color: "rgba(30, 107, 94, 0)"}
             ]
         },
         worldMap: true,
@@ -78,19 +78,19 @@ export const blogs = {
     usa: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
+                {image: "https://i.imgur.com/GPQz0AVh.jpg", color: "rgba(30, 62, 107, 0.6)"},
+                {image: "https://i.imgur.com/KMggLKeh.jpg", color: "rgba(30, 62, 107, 0.6)"},
+                {image: "https://i.imgur.com/njKZukch.jpg", color: "rgba(30, 62, 107, 0.6)"}
             ],
             size: "large",
             title: "the USA",
-            year: "2018"
+            year: "2017"
         },
         header: {
             title: "the USA",
-            subtitle: "a 23-day road trip through California, Utah, Nevada and Arizona",
+            subtitle: "a 23-day road trip through California, Utah, Nevada and Arizona in September 2017",
             images: [
-                {image: "https://i.imgur.com/eSGunduh.jpg", color: "rgba(255, 132, 44, 0.5)"}
+                {image: "https://i.imgur.com/Vz6cWeY.png", color: "rgba(30, 62, 107, 0)"}
             ]
         },
         worldMap: true,
@@ -158,7 +158,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
             ],
-            size: "small",
+            size: "medium",
             title: "Thailand",
             year: "2016",
         },
@@ -303,7 +303,7 @@ export const blogs = {
             }
         ]
     },
-    srilankaa: {
+    beijing: {
         postcard: {
             images: [
                 {image: "https://i.imgur.com/X6PVx0jh.jpg", color: "rgba(30, 107, 94, 0.6)"},
@@ -311,12 +311,12 @@ export const blogs = {
                 {image: "https://i.imgur.com/MT4lEorh.jpg", color: "rgba(30, 107, 94, 0.6)"}
             ],
             size: "large",
-            title: "Sri Lanka",
-            year: "2018"
+            title: "Beijing",
+            year: "2014"
         },
         header: {
-            title: "Sri Lanka",
-            subtitle: "a 16-day road trip through Sri Lanka in January 2018",
+            title: "Beijing",
+            subtitle: "a day in Beijing in August 2014",
             images: [
                 {image: "https://i.imgur.com/3c1dNwM.jpg", color: "rgba(30, 107, 94, 0)"}
             ]
@@ -379,7 +379,7 @@ export const blogs = {
             }
         ]
     },
-    usaa: {
+    hongkong: {
         postcard: {
             images: [
                 {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
@@ -387,12 +387,12 @@ export const blogs = {
                 {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "large",
-            title: "the USA",
-            year: "2018"
+            title: "Hong Kong",
+            year: "2014"
         },
         header: {
-            title: "the USA",
-            subtitle: "a 23-day road trip through California, Utah, Nevada and Arizona",
+            title: "Hong Kong",
+            subtitle: "two weeks in Hong Kong in August 2014",
             images: [
                 {image: "https://i.imgur.com/eSGunduh.jpg", color: "rgba(255, 132, 44, 0.5)"}
             ]
@@ -455,7 +455,7 @@ export const blogs = {
             }
         ]
     },
-    thailanda: {
+    malaysia: {
         postcard: {
             images: [
                 {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
@@ -463,12 +463,12 @@ export const blogs = {
                 {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "large",
-            title: "Thailand",
-            year: "2016",
+            title: "Malaysia",
+            year: "2017",
         },
         header: {
-            title: "Thailand",
-            subtitle: "a 17-day road trip through northern Thailand in March 2016",
+            title: "Malaysia",
+            subtitle: "a 14-day road trip through northern Malaysia in March 2014",
             images: [
                 {image: "https://i.imgur.com/3qnF0mt.jpg", color: "rgba(38, 30, 107, 0)"}
             ]
@@ -477,7 +477,7 @@ export const blogs = {
         days: [
             {
                 title: "Day one",
-                location: "Bangkok",
+                location: "Kuala Lumpur",
                 description: "filler text",
                 images: [
                     {
@@ -504,7 +504,7 @@ export const blogs = {
             },
             {
                 title: "Day two",
-                location: "Ayathuya",
+                location: "Kuala Lumpur",
                 description: "filler text",
                 images: [
                     {
@@ -515,12 +515,12 @@ export const blogs = {
             },
             {
                 title: "Day three",
-                location: "Chiang Mai",
+                location: "Penang",
                 description: "filler text"
             },
             {
                 title: "Day four",
-                location: "Sukothai",
+                location: "Langkawi",
                 description: "filler text",
                 images: [
                     {
@@ -531,7 +531,7 @@ export const blogs = {
             }
         ]
     },
-    southafricaa: {
+    newzealand: {
         postcard: {
             images: [
                 {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
@@ -539,12 +539,12 @@ export const blogs = {
                 {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "medium",
-            title: "South Africa",
-            year: "2014"
+            title: "New Zealand",
+            year: "2013"
         },
         header: {
-            title: "South Africa",
-            subtitle: "a 17-day road trip through South Africa in September 2014",
+            title: "New Zealand",
+            subtitle: "a 4 week road trip through New Zealand in December 2013",
             images: [
                 {image: "https://i.imgur.com/3qnF0mt.jpg", color: "rgba(38, 30, 107, 0)"}
             ]
