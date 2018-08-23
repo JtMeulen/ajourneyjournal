@@ -234,7 +234,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
             ],
-            size: "medium",
+            size: "large",
             title: "South Africa",
             year: "2014"
         },
@@ -310,7 +310,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/LXkNiUNh.jpg", color: "rgba(30, 107, 94, 0.6)"},
                 {image: "https://i.imgur.com/MT4lEorh.jpg", color: "rgba(30, 107, 94, 0.6)"}
             ],
-            size: "large",
+            size: "medium",
             title: "Beijing",
             year: "2014"
         },

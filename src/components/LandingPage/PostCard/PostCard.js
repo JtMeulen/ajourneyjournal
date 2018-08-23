@@ -6,9 +6,19 @@ import styles from './PostCard.css';
 class PostCard extends Component {
 
     componentWillMount(){
-        const imgArray = this.props.data.images;
-        const randImage = imgArray[Math.floor(Math.random() * imgArray.length)];
-        this.setState({image: randImage.image, color: randImage.color});
+        const firstImage = this.props.data.images[0];
+        this.setState({image: firstImage.image, color: firstImage.color, idx: 1});
+    }
+
+    componentDidMount(){
+        const image = this.props.data.images;
+        const arrLength = this.props.data.images.length - 1 ;
+        setInterval(() => this.setState(prevState => {
+            return {
+                    image: image[this.state.idx].image,
+                    color: image[this.state.idx].color,
+                    idx: prevState.idx < arrLength ? prevState.idx + 1 : 0
+            }}), 5000);
     }
 
     onClickHandler = () => {
@@ -22,12 +32,12 @@ class PostCard extends Component {
     render() {
         const { data, width } = this.props;
 
-        let height = '360';
+        let height = '300';
         if(data.size){
             if(data.size === 'medium') {
-                height = "525"
+                height = "400"
             } else if (data.size === 'large') {
-                height = "630"
+                height = "500"
             }
         }
 

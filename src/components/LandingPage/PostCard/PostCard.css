@@ -1,9 +1,9 @@
 .postcard {
-    /* width: 20%; */
     margin: 26px 13px;
     cursor: pointer;
     background-size: cover;
     background-position: bottom;
+    transition: 2.5s linear;
 }
 
 .overlay {
