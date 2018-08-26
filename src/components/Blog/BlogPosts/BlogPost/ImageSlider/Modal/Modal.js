@@ -50,13 +50,14 @@ class ImageSlider extends Component {
         return(
             <div className={styles.modalBackground} onClick={this.closeModalHandler}>
                 <div className={styles.imageContainer} onClick={this.doNothingHandler}>
-                    <div className={styles.tape}></div>
+
                     <img className={styles.image} src={currentImage.url} alt="" />
                     <div className={styles.subtext}>
                         <div className={styles.leftButton} onClick={this.previousImageHandler}></div>
                         {currentImage.text}
                         <div className={styles.rightButton} onClick={this.nextImageHandler}></div>
                     </div>
+                    
                 </div>
             </div>
         );
