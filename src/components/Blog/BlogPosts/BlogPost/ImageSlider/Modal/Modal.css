@@ -37,21 +37,37 @@
 }
 
 .leftButton, .rightButton {
+    position: absolute;
     background: grey;
-    width: 25px;
-    height: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    opacity: 0.2;
+    margin: 10px;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
+    transition: opacity 0.1s linear;
 }
 
-@media (max-width:1400px) {
-    .imageContainer {
-        max-width: 85%;
-    }
+.leftButton:hover, .rightButton:hover {
+    opacity: 1;
 }
 
-@media (max-width:450px) {
-    .imageContainer {
-        margin: 100px auto;
-        max-width: 80%;
+.leftButton {
+    left: 0;
+}
+.rightButton {
+    right: 0;
+}
+
+@media (max-width:600px) {
+    .leftButton, .rightButton {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
     }
 }

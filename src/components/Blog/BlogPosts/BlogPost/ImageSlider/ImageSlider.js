@@ -13,6 +13,7 @@ class ImageSlider extends Component {
     }
 
     thumbNailClick = (props, idx) => {
+        document.body.classList.add(styles.openModal);
         this.setState({
             modal: true,
             modalUrl: props,
@@ -21,6 +22,7 @@ class ImageSlider extends Component {
     }
 
     closeModalHandler = () => {
+        document.body.classList.remove(styles.openModal);
         this.setState({
             modal: false,
             modalUrl: {}
