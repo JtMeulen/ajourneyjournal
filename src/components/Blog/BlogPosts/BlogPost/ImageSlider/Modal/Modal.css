@@ -1,4 +1,8 @@
 .modalBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,18 +12,14 @@
     background-color: rgba(0,0,0,0.7);
 }
 
-.imageContainer {
-    z-index: 500;
-    margin: 40px auto;
-    width: 100%;
-}
-
 .image {
+    padding: 50px auto;
     /* width: 100vw; */
     border: 30px solid white;
+    border-bottom: 60px solid white;
     height: auto;
     max-width: 80vw;
-    max-height: 70vh;
+    max-height: 80vh;
     object-fit: contain;
 }
 
@@ -29,9 +29,9 @@
     justify-content: space-between;
     font-size: 25px;
     background:white;
-    padding-top: 5px;
     margin: 0;
-    width: 100%;
+    transform: translateY(-40px);
+    max-width: 80vw;
     height: 30px;
     text-align: center;
 }
