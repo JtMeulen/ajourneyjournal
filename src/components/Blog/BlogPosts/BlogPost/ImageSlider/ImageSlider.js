@@ -14,6 +14,7 @@ class ImageSlider extends Component {
 
     thumbNailClick = (props, idx) => {
         document.body.classList.add(styles.openModal);
+        document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
         this.setState({
             modal: true,
             modalUrl: props,
@@ -23,6 +24,7 @@ class ImageSlider extends Component {
 
     closeModalHandler = () => {
         document.body.classList.remove(styles.openModal);
+        document.body.removeEventListener('touchmove', function(e){ e.preventDefault(); });
         this.setState({
             modal: false,
             modalUrl: {}

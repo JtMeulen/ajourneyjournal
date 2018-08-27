@@ -30,7 +30,7 @@ export const blogs = {
                     },
                     {
                         url: "https://i.imgur.com/jZB9jyFh.jpg",
-                        text: "some text here"
+                        text: "this is a very long text for testing purposes. I want to see how this scales on smaller devices etc. Test text here, bla bla, lorem ipsum etc..."
                     },
                     {
                         url: "https://i.imgur.com/KMggLKeh.jpg",
