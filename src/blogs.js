@@ -321,7 +321,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/3c1dNwM.jpg", color: "rgba(30, 107, 94, 0)"}
             ]
         },
-        worldMap: true,
+        worldMap: false,
         days: [
             {
                 title: "Day one",
