@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import Thumbnail from './Thumbnail/Thumbnail';
 import Modal from './Modal/Modal';
@@ -12,9 +13,18 @@ class ImageSlider extends Component {
         modalUrl: {}
     }
 
+    targetElement = null;
+
+    componentDidMount() {
+        this.targetElement = document.querySelector('#modal');
+    }
+
+    componentWillUnmount() {
+        clearAllBodyScrollLocks(this.targetElement);
+    }
+
     thumbNailClick = (props, idx) => {
-        document.body.classList.add(styles.openModal);
-        document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+        disableBodyScroll();
         this.setState({
             modal: true,
             modalUrl: props,
@@ -23,8 +33,7 @@ class ImageSlider extends Component {
     }
 
     closeModalHandler = () => {
-        document.body.classList.remove(styles.openModal);
-        document.body.removeEventListener('touchmove', function(e){ e.preventDefault(); });
+        enableBodyScroll(this.targetElement);
         this.setState({
             modal: false,
             modalUrl: {}
@@ -38,7 +47,7 @@ class ImageSlider extends Component {
         })
 
         return(
-            <div className={styles.imageSlider}>
+            <div id="modal" className={styles.imageSlider}>
                 {this.state.modal &&
                     <Modal image={this.state.modalUrl} closeModalHandler={this.closeModalHandler} allImages={this.props.images} idx={this.state.modalIndex}/>
                 }
