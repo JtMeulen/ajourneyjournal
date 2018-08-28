@@ -6,4 +6,15 @@
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: 200px 100px;
+    transition: box-shadow 0.1s ease-in;
+}
+
+.image:hover {
+    box-shadow: 0 0 3px 3px orange;
+}
+
+@media (max-width:450px) {
+    .image {
+        margin: 3px;
+    }
 }

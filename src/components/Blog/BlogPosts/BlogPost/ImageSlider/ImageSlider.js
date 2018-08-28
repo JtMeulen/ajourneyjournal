@@ -20,11 +20,11 @@ class ImageSlider extends Component {
     }
 
     componentWillUnmount() {
-        clearAllBodyScrollLocks(this.targetElement);
+        clearAllBodyScrollLocks();
     }
 
     thumbNailClick = (props, idx) => {
-        disableBodyScroll();
+        disableBodyScroll(this.targetElement);
         this.setState({
             modal: true,
             modalUrl: props,

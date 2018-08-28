@@ -13,7 +13,7 @@ class BlogPosts extends Component {
 
         let paddingLeft = this.props.worldMap ? "400px" : "100px";
         if(this.props.isMobile) {
-            paddingLeft = "30px";
+            paddingLeft = "15px";
         }
 
         return(
