@@ -20,6 +20,7 @@ class WorldMap extends Component {
     };
 
     handleScroll = () => {
+        const path = document.querySelector('.route');
         const fullBody = document.documentElement.scrollHeight;
         const clientWindow = document.documentElement.clientHeight;
         const scrollHeight = document.documentElement.scrollTop;
@@ -27,7 +28,7 @@ class WorldMap extends Component {
         const scrollPercentage = (scrollHeight) / (fullBody - clientWindow);
         const drawLength = this.state.pathLength * scrollPercentage;
 
-        this.state.path.style.strokeDashoffset = this.state.pathLength - drawLength;
+        path.style.strokeDashoffset = this.state.pathLength - drawLength;
     }
 
     render() {

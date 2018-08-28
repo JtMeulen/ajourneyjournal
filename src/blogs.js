@@ -2,11 +2,11 @@ export const blogs = {
     srilanka: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/qGvQ96Sh.jpg", color: "rgba(30, 107, 94, 0.6)"},
-                {image: "https://i.imgur.com/LJgR8OUh.jpg", color: "rgba(30, 107, 94, 0.6)"},
-                {image: "https://i.imgur.com/LXkNiUNh.jpg", color: "rgba(30, 107, 94, 0.6)"}
+                {image: "https://i.imgur.com/3YvYXfGh.png", color: "rgba(30, 107, 94, 0.6)"},
+                {image: "https://i.imgur.com/3TbfZYXh.png", color: "rgba(30, 107, 94, 0.6)"},
+                {image: "https://i.imgur.com/ClOYQWS.png", color: "rgba(30, 107, 94, 0.6)"}
             ],
-            size: "small",
+            size: "medium",
             title: "Sri Lanka",
             year: "2018"
         },
@@ -78,9 +78,9 @@ export const blogs = {
     usa: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/GPQz0AVh.jpg", color: "rgba(30, 62, 107, 0.6)"},
-                {image: "https://i.imgur.com/KMggLKeh.jpg", color: "rgba(30, 62, 107, 0.6)"},
-                {image: "https://i.imgur.com/njKZukch.jpg", color: "rgba(30, 62, 107, 0.6)"}
+                {image: "https://i.imgur.com/p1zzEmOh.png", color: "rgba(30, 62, 107, 0.6)"},
+                {image: "https://i.imgur.com/lMlxpqIh.png", color: "rgba(30, 62, 107, 0.6)"},
+                {image: "https://i.imgur.com/qHAdYUlh.png", color: "rgba(30, 62, 107, 0.6)"}
             ],
             size: "large",
             title: "the USA",
@@ -154,9 +154,9 @@ export const blogs = {
     thailand: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
+                {image: "https://i.imgur.com/pcWLnhOh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "medium",
             title: "Thailand",
@@ -230,9 +230,9 @@ export const blogs = {
     southafrica: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
+                {image: "https://i.imgur.com/pcWLnhOh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "large",
             title: "South Africa",
@@ -306,9 +306,9 @@ export const blogs = {
     beijing: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/X6PVx0jh.jpg", color: "rgba(30, 107, 94, 0.6)"},
-                {image: "https://i.imgur.com/LXkNiUNh.jpg", color: "rgba(30, 107, 94, 0.6)"},
-                {image: "https://i.imgur.com/MT4lEorh.jpg", color: "rgba(30, 107, 94, 0.6)"}
+                {image: "https://i.imgur.com/pcWLnhOh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "medium",
             title: "Beijing",
@@ -382,9 +382,9 @@ export const blogs = {
     hongkong: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
+                {image: "https://i.imgur.com/pcWLnhOh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "large",
             title: "Hong Kong",
@@ -458,9 +458,9 @@ export const blogs = {
     malaysia: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
+                {image: "https://i.imgur.com/pcWLnhOh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "large",
             title: "Malaysia",
@@ -534,9 +534,9 @@ export const blogs = {
     newzealand: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/tbvs41uh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/jZB9jyFh.jpg", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/VphxbwTh.jpg", color: "rgba(38, 30, 107, 0.6)"}
+                {image: "https://i.imgur.com/pcWLnhOh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "medium",
             title: "New Zealand",

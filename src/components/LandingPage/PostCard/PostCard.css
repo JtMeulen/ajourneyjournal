@@ -3,7 +3,7 @@
     cursor: pointer;
     background-size: cover;
     background-position: bottom;
-    transition: background-image 2.5s linear;
+    transition: background-image 1.5s linear;
 }
 
 .overlay {
