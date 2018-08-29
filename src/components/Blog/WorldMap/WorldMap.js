@@ -3,6 +3,9 @@ import SVGMap from './Maps/maps';
 import styles from './WorldMap.css';
 
 class WorldMap extends Component {
+    state = {
+        percent: 0
+    }
 
     componentDidMount() {
         const path = document.querySelector('.route');
@@ -27,15 +30,17 @@ class WorldMap extends Component {
         const scrollHeight = document.documentElement.scrollTop;
 
         const scrollPercentage = (scrollHeight) / (fullBody - clientWindow);
+        this.setState({percent: scrollPercentage});
         const drawLength = this.state.pathLength * scrollPercentage;
 
         path.style.strokeDashoffset = this.state.pathLength - drawLength;
     }
 
     render() {
+        // console.log(this.state.percent)
         return(
             <div className={styles.worldMap}>
-                <SVGMap country={this.props.mapCountry} />
+                <SVGMap country={this.props.mapCountry} percent={this.state.percent}/>
             </div>
         );
     }

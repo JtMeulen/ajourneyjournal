@@ -8,7 +8,7 @@ class SVGMap extends Component {
   render() {
     switch(this.props.country) {
       case 'srilanka':
-        return <NewZealand />;
+        return <NewZealand percent={this.props.percent} />;
       case 'usa':
         return <NewZealand />;
       case 'newzealand':
