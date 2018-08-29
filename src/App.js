@@ -4,10 +4,18 @@ import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import LandingPage from './components/LandingPage/LandingPage';
 import Blog from './components/Blog/Blog';
+import Loader from './components/Loader/Loader';
 
 import {blogs} from './blogs';
 
 class App extends Component {
+  state = {
+    loading: true
+  }
+
+  componentDidMount() {
+    setTimeout(() => { this.setState({loading: false}); }, 1000);
+  }
 
   render() {
     // retrieve all possible route names from the blog object
@@ -30,8 +38,9 @@ class App extends Component {
 
     return (
       <div>
-        <BrowserRouter>
+        <BrowserRouter>        
           <Layout>
+            {this.state.loading && <Loader />}
             {routes}
           </Layout>
         </BrowserRouter>
