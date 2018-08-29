@@ -4,7 +4,7 @@ export const blogs = {
             images: [
                 {image: "https://i.imgur.com/3YvYXfGh.png", color: "rgba(30, 107, 94, 0.6)"},
                 {image: "https://i.imgur.com/3TbfZYXh.png", color: "rgba(30, 107, 94, 0.6)"},
-                {image: "https://i.imgur.com/ClOYQWS.png", color: "rgba(30, 107, 94, 0.6)"}
+                {image: "https://i.imgur.com/ClOYQWSh.png", color: "rgba(30, 107, 94, 0.6)"}
             ],
             size: "medium",
             title: "Sri Lanka",
