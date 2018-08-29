@@ -1,5 +1,5 @@
 .titleBar {
-    margin-top: 139px;
+    margin-top: 178px;
     position: fixed;
     width: 100%;
     background: #d0ced2;
@@ -44,7 +44,7 @@
         font-size: 20px;
     }
     .titleBar {
-        margin-top: 79px;
+        margin-top: 94px;
         position: absolute;
     }
 }

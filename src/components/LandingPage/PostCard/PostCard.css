@@ -3,6 +3,7 @@
     cursor: pointer;
     background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
     transition: background-image 1.5s linear;
 }
 

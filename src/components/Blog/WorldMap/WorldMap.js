@@ -6,13 +6,14 @@ class WorldMap extends Component {
 
     componentDidMount() {
         const path = document.querySelector('.route');
-        const pathLength = path.getTotalLength();
-        this.setState({path: path, pathLength: pathLength})
+        if(path){
+            const pathLength = path.getTotalLength();
+            this.setState({path: path, pathLength: pathLength})
 
-        path.style.strokeDasharray = pathLength + ' ' + pathLength;
-        path.style.strokeDashoffset = pathLength;
-
-        window.addEventListener("scroll", this.handleScroll);
+            path.style.strokeDasharray = pathLength + ' ' + pathLength;
+            path.style.strokeDashoffset = pathLength;
+            window.addEventListener("scroll", this.handleScroll);
+        }
     }
 
     componentWillUnmount() {

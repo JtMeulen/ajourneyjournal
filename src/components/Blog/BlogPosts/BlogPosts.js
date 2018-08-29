@@ -11,10 +11,7 @@ class BlogPosts extends Component {
             return <BlogPost key={idx} {...post} />
         });
 
-        let paddingLeft = this.props.worldMap ? "400px" : "100px";
-        if(this.props.isMobile) {
-            paddingLeft = "15px";
-        }
+        let paddingLeft = this.props.worldMap ? "400px" : "";
 
         return(
             <div className={styles.blogContainer} style={{"paddingLeft": `${paddingLeft}`}}>

@@ -1,9 +1,15 @@
 .blogContainer {
-    padding: 350px 100px 20px;
+    padding: 389px 50px 20px;
+}
+
+@media (max-width:800px) {
+    .blogContainer {
+        padding: 389px 50px 20px 50px;
+    }
 }
 
 @media (max-width:450px) {
     .blogContainer {
-        padding: 220px 15px 20px 15px;
+        padding: 235px 15px 20px 15px;
     }
 }
