@@ -230,9 +230,9 @@ export const blogs = {
     southafrica: {
         postcard: {
             images: [
-                {image: "https://i.imgur.com/pcWLnhOh.png", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
-                {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
+                {image: "https://i.imgur.com/LFdfHm6h.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/1AH2sMKh.png", color: "rgba(38, 30, 107, 0.6)"},
+                {image: "https://i.imgur.com/tU8pOwwh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
             size: "large",
             title: "South Africa",

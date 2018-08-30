@@ -19,7 +19,7 @@ class PostCard extends Component {
                     image: image[this.state.idx].image,
                     color: image[this.state.idx].color,
                     idx: prevState.idx < arrLength ? prevState.idx + 1 : 0
-            }}), 5000);
+            }}), 7000);
         }
     }
 
