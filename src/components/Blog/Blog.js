@@ -8,6 +8,9 @@ import BlogPosts from './BlogPosts/BlogPosts';
 import {blogs} from '../../blogs';
 
 class Blog extends Component {
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
 
     render() {
         const blogName = this.props.location.pathname.slice(1);

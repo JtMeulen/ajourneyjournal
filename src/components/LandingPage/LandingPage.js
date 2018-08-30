@@ -7,6 +7,10 @@ import styles from './LandingPage.css';
 
 class LandingPage extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     render() {
 
         // retrieve all excisting blog posts

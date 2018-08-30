@@ -14,7 +14,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => { this.setState({loading: false}); }, 1000);
+    setTimeout(() => {
+      this.setState({loading: false});
+      window.scrollTo(0,0);
+    }, 2000);
   }
 
   render() {
@@ -38,9 +41,9 @@ class App extends Component {
 
     return (
       <div>
-        <BrowserRouter>        
+        <BrowserRouter>
           <Layout>
-            {this.state.loading && <Loader />}
+            <Loader loading={this.state.loading}/>
             {routes}
           </Layout>
         </BrowserRouter>

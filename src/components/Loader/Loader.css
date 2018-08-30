@@ -1,4 +1,93 @@
-.ldsgrid {
+.background {
+  overflow: hidden;
+  position: fixed;
+  top: -500px;
+  padding-top: 500px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 200;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaded {
+  overflow: hidden;
+  position: fixed;
+  top: -500px;
+  padding-top: 500px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 200;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-120vh);
+  transition: 0.8s cubic-bezier(.39,-0.36,1,.15);
+}
+
+.container {
+  width: 200px;
+}
+.streams {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+.stream1, .stream2, .stream3 {
+  opacity: 0;
+  background-color: white;
+  border-radius: 5px;
+  height: 80px;
+  width: 5px;
+  animation: trail 1s linear infinite;
+  position: relative;
+} 
+.stream1 {
+    animation-delay: 150ms;
+    transform: translateY(-50px);
+}
+.stream2 {
+    animation-delay: 350ms;
+}
+.stream3 {
+    animation-delay: 250ms;
+    transform: translateY(-50px);
+}
+.plane {
+  animation: plane 2s linear infinite;
+}
+
+@keyframes trail {
+  0% {
+    top: -80px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes plane {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.9);}
+}
+
+
+
+/* .ldsgrid {
     display: inline-block;
     position: relative;
     width: 64px;
@@ -64,5 +153,4 @@
     50% {
       opacity: 0.5;
     }
-  }
-  
+  } */
