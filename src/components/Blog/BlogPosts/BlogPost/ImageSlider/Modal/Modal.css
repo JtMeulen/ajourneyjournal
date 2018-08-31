@@ -23,6 +23,16 @@
     object-fit: contain;
 }
 
+.closeButton {
+    opacity: 0.4;
+    transform: translate(calc(100% - 20px), 25px);
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    opacity: 1;
+}
+
 .subtext {
     font-family: PlaylistCaps;
     display: flex;

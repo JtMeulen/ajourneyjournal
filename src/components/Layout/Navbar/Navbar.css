@@ -16,10 +16,23 @@
 @media (max-width:450px) {
     .navbar {
         padding: 15px 0;
+        box-shadow: 0 -9px 19px 0px black;
     }
 
     .logo {
         width: 40%;
         height: 40%;
+    }
+}
+
+@media (orientation: landscape) {
+    .navbar {
+        padding: 15px 0;
+        box-shadow: 0 -9px 19px 0px black;
+    }
+
+    .logo {
+        width: 30%;
+        height: 30%;
     }
 }

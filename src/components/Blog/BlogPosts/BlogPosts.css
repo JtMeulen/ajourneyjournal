@@ -13,3 +13,9 @@
         padding: 235px 15px 20px 15px;
     }
 }
+
+@media (orientation: landscape) {
+    .blogContainer {
+        padding: 257px 15px 20px 15px;
+    }
+}

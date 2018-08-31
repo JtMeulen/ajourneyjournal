@@ -52,7 +52,10 @@ class ImageSlider extends Component {
                 <div className={styles.leftButton} onClick={this.previousImageHandler}>&lt;</div>
                 <div className={styles.rightButton} onClick={this.nextImageHandler}>&gt;</div>
 
-                <img className={styles.image} src={currentImage.url} alt="" onClick={this.doNothingHandler}/>
+                <div>
+                    <div className={styles.closeButton} onClick={this.closeModalHandler}>X</div>
+                    <img className={styles.image} src={currentImage.url} alt="" onClick={this.doNothingHandler}/>
+                </div>
 
                 <div className={styles.subtext} onClick={this.doNothingHandler}>
                     {currentImage.text}

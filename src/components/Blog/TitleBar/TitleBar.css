@@ -48,3 +48,18 @@
         position: absolute;
     }
 }
+
+@media (orientation: landscape) {
+    .title {
+        font-size: 50px;
+        line-height: 70px;
+        padding: 5px 0 10px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .titleBar {
+        margin-top: 113px;
+        position: absolute;
+    }
+}

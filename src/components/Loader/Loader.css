@@ -45,9 +45,9 @@
   border-radius: 5px;
   height: 80px;
   width: 5px;
-  animation: trail 1s linear infinite;
+  animation: trail 1s linear 2 forwards;
   position: relative;
-} 
+}
 .stream1 {
     animation-delay: 150ms;
     transform: translateY(-50px);
