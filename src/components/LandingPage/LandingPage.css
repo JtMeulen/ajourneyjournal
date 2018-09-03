@@ -41,9 +41,3 @@
         padding: 70px 0;
     }
 }
-
-@media (orientation: landscape) {
-    .postcards {
-        padding: 92px 0;
-    }
-}
