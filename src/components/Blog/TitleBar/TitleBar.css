@@ -49,3 +49,18 @@
     }
 }
 
+@media (max-width:900px) and (max-height: 450px) {
+    .title {
+        font-size: 50px;
+        line-height: 70px;
+        padding: 5px 0 10px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .titleBar {
+        margin-top: 15%;
+        position: absolute;
+    }
+}
+

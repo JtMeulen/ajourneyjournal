@@ -29,19 +29,19 @@ export const blogs = {
                         text: "some text here"
                     },
                     {
-                        url: "https://i.imgur.com/jZB9jyFh.jpg",
+                        url: "https://i.imgur.com/nA78G2Zh.png",
                         text: "this is a very long text for testing purposes. I want to see how this scales on smaller devices etc. Test text here, bla bla, lorem ipsum etc..."
                     },
                     {
-                        url: "https://i.imgur.com/KMggLKeh.jpg",
+                        url: "https://i.imgur.com/7HyWUCvh.png",
                         text: "some text here"
                     },
                     {
-                        url: "https://i.imgur.com/LJgR8OUh.jpg",
+                        url: "https://i.imgur.com/1AH2sMKh.png",
                         text: "some text here"
                     },
                     {
-                        url: "https://i.imgur.com/GyGlHdph.png",
+                        url: "https://i.imgur.com/tU8pOwwh.png",
                         text: "some text here"
                     }
                 ]

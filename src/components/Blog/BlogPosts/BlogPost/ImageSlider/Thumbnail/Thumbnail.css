@@ -5,7 +5,8 @@
     background: grey;
     cursor: pointer;
     background-repeat: no-repeat;
-    background-size: 200px 100px;
+    background-position: center;
+    background-size: cover;
     transition: box-shadow 0.1s ease-in;
 }
 
