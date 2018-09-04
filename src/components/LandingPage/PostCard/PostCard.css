@@ -38,17 +38,17 @@
 .title {
     margin: 0;
     font-family: PlaylistScript;
-    font-size: 75px;
+    font-size: 50px;
 }
 
 .year {
     margin: 0;
     font-family: PlaylistCaps;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
 }
 
-@media (max-width:800px) {
+/* @media (max-width:800px) {
     .title {
         font-size: 50px;
     }
@@ -56,3 +56,12 @@
         font-size: 30px;
     }
 }
+
+@media (min-width: 1400px) and (max-width:1610px) {
+    .title {
+        font-size: 50px;
+    }
+    .year {
+        font-size: 30px;
+    }
+} */
