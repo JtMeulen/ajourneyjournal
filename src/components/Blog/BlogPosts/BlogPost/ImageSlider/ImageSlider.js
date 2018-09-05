@@ -28,7 +28,7 @@ class ImageSlider extends Component {
         this.setState({
             modal: true,
             modalUrl: props,
-            modalIndex: idx
+            modalIndex: props.idx
         });
     }
 
@@ -49,7 +49,7 @@ class ImageSlider extends Component {
         return(
             <div id="modal" className={styles.imageSlider}>
                 {this.state.modal &&
-                    <Modal image={this.state.modalUrl} closeModalHandler={this.closeModalHandler} allImages={this.props.images} idx={this.state.modalIndex}/>
+                    <Modal image={this.state.modalUrl} closeModalHandler={this.closeModalHandler} allImages={this.props.allImages} idx={this.state.modalIndex}/>
                 }
                 {images}
             </div>

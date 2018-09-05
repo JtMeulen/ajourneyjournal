@@ -6,6 +6,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/3TbfZYXh.png", color: "rgba(30, 107, 94, 0.6)"},
                 {image: "https://i.imgur.com/ClOYQWSh.png", color: "rgba(30, 107, 94, 0.6)"}
             ],
+            mobileImage: 2,
             size: "medium",
             title: "Sri Lanka",
             year: "2018"
@@ -52,7 +53,7 @@ export const blogs = {
                 description: "filler text",
                 images: [
                     {
-                        url: "https://i.imgur.com/eSGunduh.jpg",
+                        url: "https://i.imgur.com/GyGlHdp.png",
                         text: "some text here"
                     }
                 ]
@@ -60,7 +61,8 @@ export const blogs = {
             {
                 title: "Day three",
                 location: "Mirissa",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day four",
@@ -68,7 +70,7 @@ export const blogs = {
                 description: "filler text",
                 images: [
                     {
-                        url: "",
+                        url: "https://i.imgur.com/ClOYQWSh.png",
                         text: "some text here"
                     }
                 ]
@@ -82,6 +84,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/lMlxpqIh.png", color: "rgba(30, 62, 107, 0.6)"},
                 {image: "https://i.imgur.com/qHAdYUlh.png", color: "rgba(30, 62, 107, 0.6)"}
             ],
+            mobileImage: 2,
             size: "large",
             title: "the USA",
             year: "2017"
@@ -136,7 +139,8 @@ export const blogs = {
             {
                 title: "Day 2",
                 location: "San Francisco",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day 3",
@@ -158,6 +162,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
+            mobileImage: 3,
             size: "medium",
             title: "Thailand",
             year: "2016",
@@ -212,7 +217,8 @@ export const blogs = {
             {
                 title: "Day three",
                 location: "Chiang Mai",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day four",
@@ -234,6 +240,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/1AH2sMKh.png", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/tU8pOwwh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
+            mobileImage: 2,
             size: "large",
             title: "South Africa",
             year: "2014"
@@ -288,7 +295,8 @@ export const blogs = {
             {
                 title: "Day three",
                 location: "Mirissa",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day four",
@@ -310,6 +318,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
+            mobileImage: 3,
             size: "medium",
             title: "Beijing",
             year: "2014"
@@ -364,7 +373,8 @@ export const blogs = {
             {
                 title: "Day three",
                 location: "Mirissa",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day four",
@@ -386,6 +396,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
+            mobileImage: 1,
             size: "large",
             title: "Hong Kong",
             year: "2014"
@@ -440,7 +451,8 @@ export const blogs = {
             {
                 title: "Day 2",
                 location: "San Francisco",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day 3",
@@ -462,6 +474,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
+            mobileImage: 3,
             size: "large",
             title: "Malaysia",
             year: "2017",
@@ -516,7 +529,8 @@ export const blogs = {
             {
                 title: "Day three",
                 location: "Penang",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day four",
@@ -538,6 +552,7 @@ export const blogs = {
                 {image: "https://i.imgur.com/7HyWUCvh.png", color: "rgba(38, 30, 107, 0.6)"},
                 {image: "https://i.imgur.com/nA78G2Zh.png", color: "rgba(38, 30, 107, 0.6)"}
             ],
+            mobileImage: 1,
             size: "medium",
             title: "New Zealand",
             year: "2013"
@@ -592,7 +607,8 @@ export const blogs = {
             {
                 title: "Day three",
                 location: "Mirissa",
-                description: "filler text"
+                description: "filler text",
+                images: []
             },
             {
                 title: "Day four",

@@ -14,7 +14,7 @@ class BlogPost extends Component {
                 <h2 className={styles.location}>{this.props.location}</h2>
                 <p className={styles.description}>{this.props.description}</p>
 
-                {this.props.images && <ImageSlider images={this.props.images} />}
+                {this.props.images && <ImageSlider images={this.props.images} allImages={this.props.allImages}/>}
 
                 <img src={breakline} alt='' className={styles.breakline}/>
             </div>

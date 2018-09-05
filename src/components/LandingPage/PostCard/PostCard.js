@@ -6,14 +6,21 @@ import styles from './PostCard.css';
 class PostCard extends Component {
 
     componentWillMount(){
-        const firstImage = this.props.data.images[0];
-        this.setState({image: firstImage.image, color: firstImage.color, idx: 1});
+        const {width, data} = this.props;
+
+        const selectedStartImage = width <= 500 ? data.mobileImage - 1 : 0;
+        const firstImage = data.images[selectedStartImage];
+        const overlayColor = this.isTouchDevice() ? "rgba(30, 62, 107, 0.6)" : firstImage.color;
+
+        this.setState({image: firstImage.image, color: overlayColor, idx: 1});
     }
 
     componentDidMount(){
-        const image = this.props.data.images;
-        const arrLength = this.props.data.images.length - 1 ;
-        if(!this.isTouchDevice()){
+        const {data, width} = this.props;
+        const image = data.images;
+        const arrLength = data.images.length - 1 ;
+
+        if(width > 500){
         setInterval(() => this.setState(prevState => {
             return {
                     image: image[this.state.idx].image,
@@ -43,7 +50,7 @@ class PostCard extends Component {
             }
         }
 
-        height = width >= 600 ? height * (width / 1600) : height * (width / 1600) * 2;
+        height = width >= 500 ? height * (width / 1600) : 230;
 
         const image = this.state.image || '';
         const overlayColor = this.state.color || 'rgba(204, 132, 44, 0.7)';

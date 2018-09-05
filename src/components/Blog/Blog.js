@@ -16,7 +16,7 @@ class Blog extends Component {
         const blogName = this.props.location.pathname.slice(1);
 
         const blogData = blogs[blogName];
-        const showMap = blogData.worldMap && this.props.windowWidth > 800;
+        const showMap = blogData.worldMap && this.props.windowWidth > 900;
         const isMobile = this.props.windowWidth <= 450;
 
         return(
