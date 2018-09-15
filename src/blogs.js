@@ -23,7 +23,8 @@ export const blogs = {
             {
                 title: "Day one",
                 location: "Colombo",
-                description: "filler text",
+                description: "We had a long flight, ate good food and went to the hotel early",
+                video: 'https://www.youtube.com/watch?v=Kxszg2zmxOk',
                 images: [
                     {
                         url: "https://i.imgur.com/eSGunduh.jpg",
