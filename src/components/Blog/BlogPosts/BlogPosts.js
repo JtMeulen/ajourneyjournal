@@ -6,7 +6,9 @@ import styles from './BlogPosts.css';
 class BlogPosts extends Component {
 
     render() {
-        const allImg = this.props.data.days.map(day => day.images);
+        const {days} = this.props.data;
+
+        const allImg = days.map(day => day.images);
         const allImages = [].concat(...allImg);
 
         allImages.forEach((image, idx) => {
@@ -14,7 +16,7 @@ class BlogPosts extends Component {
         });
 
         let counter = 0;
-        this.props.data.days.forEach(day => {
+        days.forEach(day => {
             if(day.images.length > 0){
                 day.images.forEach(image => {
                     image.idx = counter;
@@ -23,7 +25,7 @@ class BlogPosts extends Component {
             }
         });
 
-        const blogposts = this.props.data.days.map((post, idx) => {
+        const blogposts = days.map((post, idx) => {
             return <BlogPost key={idx} {...post} allImages={allImages} />
         });
 
