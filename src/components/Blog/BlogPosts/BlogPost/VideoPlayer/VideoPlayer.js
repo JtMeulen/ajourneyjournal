@@ -7,19 +7,21 @@ class VideoPlayer extends Component {
 
     render() {
         return(
-            <div className={styles.videoWrapper}>
-                <YouTubePlayer
-                    url={this.props.videoLink}
-                    className={styles.videoPlayer}
-                    controls
-                    width='100%'
-                    height='100%'
-                    config={{
-                        youtube: {
-                          playerVars: { modestbranding: 0 }
-                        }
-                      }}
+            <div className={styles.outerWrapper}>
+                <div className={styles.videoWrapper}>
+                    <YouTubePlayer
+                        url={this.props.videoLink}
+                        className={styles.videoPlayer}
+                        controls
+                        width='100%'
+                        height='100%'
+                        config={{
+                            youtube: {
+                            playerVars: { modestbranding: 0 }
+                            }
+                        }}
                     />
+                </div>
             </div>
         );
     }

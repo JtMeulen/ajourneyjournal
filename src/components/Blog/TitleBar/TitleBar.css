@@ -2,6 +2,7 @@
     margin-top: 178px;
     position: fixed;
     width: 100%;
+    z-index: 50;
     background: #d0ced2;
     background-size: cover;
     background-position: bottom;
